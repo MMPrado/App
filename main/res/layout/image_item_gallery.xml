@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/green_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/simpleGridView"
+        android:background="@drawable/green_background"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_image_view"
+            android:layout_width="@dimen/size_240"
+            android:layout_height="@dimen/size_240"
+            />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

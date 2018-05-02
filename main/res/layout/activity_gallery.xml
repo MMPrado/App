@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="mx.edu.utng.lajosefa.activities.GalleryActivity">
+
+    <Button
+        android:id="@+id/btn_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/select_image"
+        android:background="@drawable/border"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_btn"
+        />
+
+    <ImageView
+        android:id="@+id/imv_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_upload"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_choose_image" />
+
+    <ProgressBar
+        android:id="@+id/pgb_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_choose_image"
+        android:layout_marginTop="@dimen/layout_top" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/size_17"
+        android:layout_marginRight="@dimen/size_17"
+        android:layout_toLeftOf="@+id/btn_share"
+        android:layout_toStartOf="@+id/btn_share"
+        android:background="@drawable/border"
+        android:text="@string/share"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_share" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/size_28"
+        android:layout_marginStart="@dimen/size_28"
+        android:background="@drawable/border"
+        android:text="@string/show_gallery"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_share" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/size_13"
+        android:layout_marginStart="@dimen/size_13"
+        android:layout_toEndOf="@+id/btn_choose_image"
+        android:layout_toRightOf="@+id/btn_choose_image"
+        android:background="@drawable/border"
+        android:src="@drawable/c"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_share" />
+
+</RelativeLayout>

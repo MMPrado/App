@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.lajosefa.activities.BottleActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_botle"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_28"
+        android:layout_marginTop="@dimen/size_15"
+        android:id="@+id/txv_title"
+        />
+    <ImageView
+        android:id="@+id/imv_bottle"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_300"
+        android:layout_marginTop="@dimen/size_14"
+        android:src="@drawable/bottle"
+        android:layout_below="@id/txv_title"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:text="@string/turn"
+        android:layout_below="@id/imv_bottle"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

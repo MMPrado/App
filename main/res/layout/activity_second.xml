@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="mx.edu.utng.lajosefa.activities.SecondActivity">
+
+    <ImageView
+        android:id="@+id/imv_selectedImage"
+        android:layout_width="@dimen/size_363"
+        android:layout_height="@dimen/size_398"
+        android:layout_above="@+id/btn_button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_29"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/btn_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_59"
+        android:background="@drawable/border"
+        android:onClick="Comment"
+        android:text="@string/write_comment3"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_20" />
+
+
+
+
+</RelativeLayout>

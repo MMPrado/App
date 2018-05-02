@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="mx.edu.utng.lajosefa.activities.IntroActivity">
+
+    <TextView
+        android:id="@+id/txv_tittle2"
+        android:layout_width="@dimen/size_150"
+        android:layout_height="@dimen/size_45"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_64"
+        android:background="@drawable/border"
+        android:text="@string/events"
+        android:textAlignment="center"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/size_34sp" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/ypv_youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txv_tittle2"
+        android:layout_marginTop="@dimen/size_94" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/drawer1">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reserve_nav_item"
+            android:icon="@drawable/reservation"
+            android:title="@string/item_andd_reservar_nav_item" />
+
+        <item
+            android:id="@+id/promo_nav_item"
+            android:icon="@drawable/promotion"
+            android:title="@string/item_andd_promo__nav_item" />
+        <item
+            android:id="@+id/msj_nav_item"
+            android:icon="@drawable/message"
+            android:title="@string/item_andd_msj_nav_item" />
+        <item
+            android:id="@+id/drink_nav_item"
+            android:icon="@drawable/drink"
+            android:title="@string/item_andd_drink_nav_item" />
+        <item
+            android:id="@+id/schedule_nav_item"
+            android:icon="@drawable/schedule_menu"
+            android:title="@string/item_andd_schedule_nav_item" />
+        <item
+            android:id="@+id/facebook_nav_item"
+            android:icon="@drawable/links"
+            android:title="Redes sociales"
+            />
+        <item
+            android:id="@+id/gallery_nav_item"
+            android:icon="@drawable/gallery2"
+            android:title="@string/item_andd_gallery_nav_item" />
+        <item
+            android:id="@+id/video_nav_item"
+            android:icon="@drawable/video"
+            android:title="@string/videos" />
+        <item
+            android:id="@+id/bottle_nav_item"
+            android:icon="@drawable/control"
+            android:title="@string/game_botle" />
+        <item
+            android:id="@+id/ubication_nav_item"
+            android:icon="@drawable/ubic"
+            android:title="@string/ubication" />
+        <item
+            android:id="@+id/admin_nav_item"
+            android:icon="@drawable/admin"
+            android:title="@string/administration" />
+        <item
+            android:id="@+id/info_nav_item"
+            android:icon="@drawable/s"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/session_nav_item"
+            android:icon="@drawable/close"
+            android:title="@string/close" />
+    </group>
+</menu>

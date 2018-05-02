@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="mx.edu.utng.lajosefa.activities.MainReserveActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txv_textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txv_textView5"
+            android:hint="@string/name_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/txv_textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_name"
+            android:text="@string/phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txv_textView4"
+            android:hint="@string/phone_hint"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/txv_textView3"
+            android:layout_width="@dimen/size_100"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/date"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:id="@+id/txv_textView2"
+            android:layout_width="@dimen/size_177"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_phone"
+            android:text="@string/n_people"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+
+        <EditText
+            android:id="@+id/edt_num_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txv_textView2"
+            android:hint="@string/n_people_hint"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edt_date_reservation"
+            android:layout_width="@dimen/size_200"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txv_textView3"
+            android:layout_alignBottom="@+id/txv_textView3"
+            android:layout_toEndOf="@+id/txv_textView3"
+            android:layout_toRightOf="@+id/txv_textView3"
+            android:hint="@string/date_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_date"
+            android:layout_width="@dimen/size_53"
+            android:layout_height="@dimen/size_53"
+            android:layout_alignBottom="@+id/edt_date_reservation"
+            android:layout_toEndOf="@+id/edt_date_reservation"
+            android:layout_toRightOf="@+id/edt_date_reservation"
+            android:adjustViewBounds="false"
+            android:contentDescription="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/txv_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_date_reservation"
+            android:text="@string/order_reserve"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+
+        <EditText
+            android:id="@+id/edt_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txv_textView"
+            android:hint="@string/order_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_Reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_order"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/border"
+            android:text="@string/reserve"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

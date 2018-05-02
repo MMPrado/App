@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="mx.edu.utng.lajosefa.activities.AboutActivity">
+
+    <ImageView
+        android:id="@+id/imv_utng"
+        android:layout_width="@dimen/size_300"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txv_informatic_system"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txv_informatic_system"
+        android:src="@drawable/utng" />
+
+    <TextView
+        android:id="@+id/txv_informatic_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_utng"
+        android:layout_centerHorizontal="true"
+        android:text="@string/informatic_system"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_30sp" />
+
+    <TextView
+        android:id="@+id/txv_developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv_mpm"
+        android:layout_alignStart="@+id/txv_mpm"
+        android:layout_below="@+id/txv_informatic_system"
+        android:text="@string/developers"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20" />
+
+
+    <ImageView
+        android:id="@+id/imv_mpm"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="@dimen/size_80"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txv_developers"
+        android:layout_marginLeft="@dimen/size_25"
+        android:layout_marginStart="@dimen/size_25"
+        android:layout_marginTop="@dimen/size_17"
+        android:src="@drawable/mayra" />
+
+    <TextView
+        android:id="@+id/txv_mpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_mpm"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_marginStart="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_29"
+        android:layout_toEndOf="@+id/imv_mpm"
+        android:layout_toRightOf="@+id/imv_mpm"
+        android:text="@string/mayra"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20" />
+
+    <ImageView
+        android:id="@+id/imv_madl"
+        android:layout_width="@dimen/size_70"
+        android:layout_height="@dimen/size_75"
+        android:layout_alignEnd="@+id/imv_mpm"
+        android:layout_alignRight="@+id/imv_mpm"
+        android:layout_below="@+id/txv_mpm"
+        android:layout_marginTop="@dimen/size_30"
+        android:src="@drawable/diana" />
+
+    <TextView
+        android:id="@+id/txv_madl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imv_zcm"
+        android:layout_alignLeft="@+id/txv_mpm"
+        android:layout_alignStart="@+id/txv_mpm"
+        android:layout_marginBottom="@dimen/size_11"
+        android:text="@string/diana"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20" />
+
+    <ImageView
+        android:id="@+id/imv_zcm"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="@dimen/size_80"
+        android:layout_alignEnd="@+id/imv_madl"
+        android:layout_alignRight="@+id/imv_madl"
+        android:layout_below="@+id/imv_madl"
+        android:layout_marginTop="@dimen/size_14"
+        android:src="@drawable/magali" />
+
+    <TextView
+        android:id="@+id/txv_zcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv_madl"
+        android:layout_alignStart="@+id/txv_madl"
+        android:layout_below="@+id/imv_madl"
+        android:layout_marginTop="@dimen/size_39"
+        android:text="@string/catherine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20" />
+
+</RelativeLayout>
